@@ -19,6 +19,7 @@ cdc_ether.ko
 cdc_ncm.ko
 diag.ko
 ftdi_sio.ko
+gzvm.ko
 hci_uart.ko
 hidp.ko
 ieee802154.ko
