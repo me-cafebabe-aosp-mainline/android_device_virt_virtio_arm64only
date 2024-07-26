@@ -31,11 +31,6 @@ TARGET_2ND_CPU_VARIANT := generic
 BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_ARCH := arm64
 
-ifneq ($(wildcard $(TARGET_KERNEL_SOURCE)/Makefile),)
-BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/config/modules.load.ramdisk))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
-endif
-
 # SELinux
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
