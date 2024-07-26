@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Boot manager
+TARGET_BOOT_MANAGER := rEFInd
+
 # Kernel
 BOARD_KERNEL_CMDLINE_CONSOLE := \
     console=ttyAMA0
