@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(USES_DEVICE_VIRT_VIRTIO_ARM64),true)
+ifeq ($(USES_DEVICE_VIRT_VIRTIO_ARM64ONLY),true)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
