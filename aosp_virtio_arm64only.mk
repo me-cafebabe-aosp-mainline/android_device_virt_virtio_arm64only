@@ -11,6 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # Inherit from device
 $(call inherit-product, device/virt/virtio_arm64only/device.mk)
 
+$(call enforce-product-packages-exist,\
+    android.hardware.health@2.0-impl-default.recovery \
+    DeviceDiagnostics \
+    product_manifest.xml)
+
 PRODUCT_NAME := aosp_virtio_arm64only
 PRODUCT_DEVICE := virtio_arm64only
 PRODUCT_BRAND := VirtIO
